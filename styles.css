@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #041c32;
+}
+
+hr {
+  border-style: dotted none none;
+  border-width: 20px;
+  margin: 30px auto 30px;
+  width: 400px;
+  border-color: #d8d2cb;
+}
+
+/* Header */
+
+.main-header {
+  position: fixed;
+  z-index: 9999;
+  right: 5px;
+}
+
+.nav-container {
+  display: inline-block;
+  width: 25rem;
+  height: 100vh;
+}
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: right;
+}
+.nav-link {
+  text-decoration: none;
+  margin: 100px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  direction: rtl;
+  color: black;
+  opacity: 0.6;
+}
+
+.nav-link:hover {
+  color: #495371;
+  text-decoration: underline;
+}
+
+/* First Section */
+#main {
+  background-image: url(images/nao1.png);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  padding: 0px 0px 10px;
+}
+
+#title {
+  display: inline-block;
+  font-size: 10.4rem;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#title:hover {
+  color: #effffd;
+}
+#img {
+  border: 1px solid #effffd;
+  margin-top: 50px;
+  display: block;
+  width: 380px;
+}
+
+#img-caption {
+  line-height: 50px;
+  text-align: left;
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  width: 920px;
+  opacity: 0.8;
+}
+
+#main-text {
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* Second Section */
+#secondSection {
+  padding: 0px 0px 2px;
+  background-image: linear-gradient(#398ab9, #1c658c);
+  position: relative;
+}
+
+.information-container {
+  margin-left: 50px;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 30px;
+}
+.infoh2 {
+  display: flex;
+  justify-content: center;
+  color: #effffd;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 50px 0px 30px;
+  letter-spacing: 30px;
+}
+
+.info-p {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+.p-tag:hover {
+  display: inline-block;
+  color: #effffd;
+}
+
+.span-p {
+  font-weight: 700;
+}
+.info-items {
+  padding-left: 50px;
+  /* line-height: 30px; */
+}
+.secondSectionImg {
+  border: 1px solid #effffd;
+  position: absolute;
+  width: 40%;
+  right: 200px;
+  top: 200px;
+  opacity: 0.9;
+}
+
+/* Footer */
+#footer {
+  padding: 100px 50px;
+  background-color: #e9e5d6;
+}
+
+#tribute-link {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#tribute-link a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  padding: 100px;
+}
+
+#tribute-link a:hover {
+  color: #effffd;
+}
+.footer-btn {
+  height: 200px;
+  border-radius: 50%;
+}
+
+.footer-btn:hover {
+  background-color: #041c32;
+}
+
+@media only screen and (max-width: 1600px) {
+  hr {
+    display: none;
+  }
+  .nav-link {
+    display: none;
+  }
+  #main {
+    position: relative;
+    height: 900px;
+  }
+  #title {
+    font-size: 10rem;
+  }
+  #img-caption {
+    width: 800px;
+  }
+  .secondSectionImg {
+    right: 400px;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .nav-link {
+      display: none;
+    }
+    .secondSectionImg {
+      display: inline-block;
+      position: static;
+      margin-left: 400px;
+      margin-bottom: 20px;
+    }
+    .infoh2 {
+      border: none;
+    }
+    .info-p {
+      height: 500px;
+      position: relative;
+      border: none;
+      text-align: center;
+    }
+    hr {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    #main-text {
+      flex-direction: column;
+      text-align: center;
+    }
+    #img-caption {
+      text-align: center;
+    }
+    #img {
+      position: relative;
+      margin: 20px 0px 20px 300px;
+    }
+    * {
+      margin: 0px;
+    }
+    .secondSectionImg {
+      margin-left: 50px;
+    }
+    .flex {
+      display: block;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 952px) {
+    #title {
+      font-size: 7rem;
+    }
+    #img-caption {
+      font-size: 2rem;
+    }
+    #img {
+      width: 50%;
+      margin: 50px 0px 0px 220px;
+    }
+  }
+  @media only screen and (max-width: 851px) {
+    #title {
+      font-size: 6rem;
+    }
+    #img-caption {
+      font-size: 1.5rem;
+      width: 500px;
+    }
+    #img {
+      margin-left: 198px;
+    }
+  }
+  @media only screen and (max-width: 649px) {
+    #main {
+      padding: 10px;
+    }
+    #img {
+      margin-left: 150px;
+    }
+  }
+}
